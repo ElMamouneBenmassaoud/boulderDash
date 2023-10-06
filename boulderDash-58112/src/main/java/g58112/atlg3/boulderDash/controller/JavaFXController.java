@@ -100,7 +100,7 @@ public class JavaFXController extends Application {
     	viewScene.setOnKeyPressed(
 	    	keyEvent -> {
 	            switch (keyEvent.getCode()) {
-	                case Z:
+	                case W:
 	                	this.boulderDash.move(Direction.HAUT);
 	                    break;
 	                case S:
@@ -109,10 +109,10 @@ public class JavaFXController extends Application {
 	                case D:
 	                	this.boulderDash.move(Direction.DROITE);
 	                    break;
-	                case Q:
+	                case A:
 	                	this.boulderDash.move(Direction.GAUCHE);
 	                    break;
-	                case ESCAPE:
+					case P:
 	                	this.boulderDash.abandonner();
 	                    break;
 	                case U:
@@ -121,7 +121,7 @@ public class JavaFXController extends Application {
 	                case R:
 	                	this.boulderDash.redo();
 	                    break;
-					case A:
+					case Q:
 						this.boulderDash.hasTakenJocker();
 						break;
 					case N:
